@@ -1,4 +1,6 @@
 
+// list
+
 const navBar = document.querySelector('#navbar__list');
 const navElement1 = document.createElement('li');
 const navElement2 = document.createElement('li');
@@ -6,7 +8,7 @@ const navElement3 = document.createElement('li');
 const navElement4 = document.createElement('li');
 const ul=document.getElementById('navbar__list')
 
-navElement1.setAttribute("id",("p1"))
+navElement1.setAttribute("id",("p1"),"class","")
 navElement2.setAttribute("id",("p2"))
 navElement3.setAttribute("id",("p3"))
 navElement4.setAttribute("id",("p4"))
@@ -29,23 +31,92 @@ navElement3.appendChild(text3);
 navElement4.appendChild(text4);
 
 
-const click1 = document.getElementById("1");
-click1.addEventListener("click", scrollIntoView({behavior:"smooth",
-block:"center"}));
 
 
-const click2 = document.getElementById("2");
-click2.addEventListener("click", scrollIntoView({behavior:"smooth",
-block:"center"}));
-
-const click3 = document.getElementById("3");
-click3.addEventListener("click", scrollIntoView({behavior:"smooth",
-block:"center"}));
 
 
-const click4 = document.getElementById("4");
-click14.addEventListener("click", scrollIntoView({behavior:"smooth",
-block:"center"}));
+
+
+
+// active
+
+if(bottom=1947, height=1213 ,left=0 ,right=887 ,top=734 ,width=887,x=0, y=734)
+    {
+        function myFunction() {
+            var element1 = document.getElementById("p1");
+            element.classList.add("active");
+            }
+        
+    }
+    else{
+        function myFunction() {
+        var element = document.getElementById("p1");
+        element.classList.remove("active");
+        }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// scrollIntoView
+
+
+let elm1 = document.querySelector('#b1')
+let view1 = document.querySelector('#p1')
+
+elm1.addEventListener("click", (e) => {
+    e.preventDefault()
+    view1.scrollIntoView()
+})
+
+
+let elm2 = document.querySelector('#b2')
+let view2 = document.querySelector('#p2')
+
+elm2.addEventListener("click", (e) => {
+e.preventDefault()
+view2.scrollIntoView()
+    })
+
+    let elm3 = document.querySelector('#b3')
+    let view3 = document.querySelector('#p3')
+    
+    elm3.addEventListener("click", (e) => {
+        e.preventDefault()
+        view3.scrollIntoView()
+})
+
+
+let elm4 = document.querySelector('#b4')
+let view4 = document.querySelector('#p4')
+
+elm4.addEventListener("click", (e) => {
+e.preventDefault()
+view4.scrollIntoView()
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
